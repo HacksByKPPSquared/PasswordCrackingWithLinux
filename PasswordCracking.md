@@ -1,8 +1,8 @@
-Lab 02: Password Cracking with Linux
+# Password Cracking with Linux
 
-1.  Cracking Linux Passwords
+##  Cracking Linux Passwords
 
-    1.  Creating User Accounts and Groups
+  **Creating User Accounts and Groups**
 
 <!-- -->
 
@@ -17,15 +17,13 @@ Lab 02: Password Cracking with Linux
 > <img src="./media/image1.png"
 > style="width:2.42742in;height:0.27087in" />
 
-4.  Type the command below, followed by pressing the Enter key to view
-    the groups on the system.
+4.  Type the command below, followed by pressing the Enter key to view the groups on the system.
 
 > root@Kali Attacker:~# cat /etc/ group
 
 <img src="./media/image2.png" style="width:4.70704in;height:2.8354in" />
 
-5.  Enter the command below to p juniors and seniors . opulate the group
-    list by creating two new groups
+5.  Enter the command below to p juniors and seniors . opulate the group list by creating two new groups
 
     1.  root@Kali Attacker:~# groupadd juniors
 
@@ -79,43 +77,35 @@ Lab 02: Password Cracking with Linux
 > <img src="./media/image9.png"
 > style="width:3.45882in;height:0.93763in" />
 >
-> 11\. View the /etc/shadow file and observe the values next to the
-> newly created accounts towards the bottom of the list
->
+> 11\. View the /etc/shadow file and observe the values next to the newly created accounts towards the bottom of the list
+
 > root@Kali-Attacker:~# cat /etc/shadow
 >
 > <img src="./media/image10.png" style="width:3.06931in;height:3.7127in"
 > alt="A screenshot of a computer Description automatically generated" />
 >
-> 12\. Configure passwords for the users: elmo, oscar, lisa, and homer.
-> First, begin by configuring the password for the elmo user account.
+> 12\. Configure passwords for the users: elmo, oscar, lisa, and homer. First, begin by configuring the password for the elmo user account.
 >
 > root@Kali-Attacker:~# passwd elmo
 >
-> 13\. When prompted for the new password, type 123123 followed by
-> pressing the Enter key. When prompted to retype the password, enter it
-> again.
+> 13\. When prompted for the new password, type 123123 followed by pressing the Enter key. When prompted to retype the password, enter it again.
 >
 > <img src="./media/image11.png" style="width:4.125in;height:1.09722in"
 > alt="A close-up of a computer screen Description automatically generated" />
 >
-> 14\. Configure the password for oscar next. When prompted, enter
-> sanjose as the password.
+> 14\. Configure the password for oscar next. When prompted, enter sanjose as the password.
 >
 > root@Kali-Attacker:~# passwd oscar
 >
-> 15\. Configure the password for lisa. When prompted, enter academic as
-> the password.
+> 15\. Configure the password for lisa. When prompted, enter academic as the password.
 >
 > root@Kali-Attacker:~# passwd lisa
 >
-> 16\. Configure the password for homer. When prompted, enter acapulco
-> as the password.
+> 16\. Configure the password for homer. When prompted, enter acapulco as the password.
 >
 > root@Kali-Attacker:~# passwd homer
 >
-> 17\. Type the command below to view the new user accounts along with
-> their respective hashes in the shadow file. The command options used
+> 17\. Type the command below to view the new user accounts along with their respective hashes in the shadow file. The command options used
 > below will only output the last four accounts in the shadow file.
 >
 > <img src="./media/image12.png" style="width:8.41667in;height:1.94444in"
@@ -133,10 +123,9 @@ Lab 02: Password Cracking with Linux
 >
 > <img src="./media/image13.png" style="width:8.56944in;height:5in"
 > alt="A computer screen shot of a computer screen Description automatically generated" />
->
 > 2\. Run John the Ripper against the /etc/shadow file using a wordlist
 > called passlist.
->
+
 > <img src="./media/image14.png" style="width:7.23565in;height:2.58416in"
 > alt="A computer screen with white text Description automatically generated" />
 
@@ -174,14 +163,12 @@ root@Kali-Attacker:/tmp/hashes# cat winhashes
 > <img src="./media/image18.png" style="width:6.55556in;height:2.81944in"
 > alt="A computer screen with white text Description automatically generated" />
 >
-> 5\. Now that we have confirmed what is needed to be parsed out, save
-> the output to a file named nthashes.
+> 5\. Now that we have confirmed what is needed to be parsed out, save the output to a file named nthashes.
 >
 > <img src="./media/image19.png"
 > style="width:7.90278in;height:0.65278in" />
 
-6\. Verify that the NTHashes have outputted correctly in the nthashes
-file.
+6\. Verify that the NTHashes have outputted correctly in the nthashes file.
 
 root@Kali-Attacker:/tmp/hashes# cat nthashes
 
