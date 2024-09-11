@@ -82,4 +82,4 @@ Understanding password security is *critical* in the world of cybersecurity. In 
 ---
 
 Ready to crack some passwords and level up your security game? Let’s go! 💻🚀
-## 👉🏾[Lab Walkthrough]()
+## 👉🏾[Lab Walkthrough](https://github.com/Kpierre03/PasswordCrackingWithLinux/edit/main/PasswordCracking.md)
